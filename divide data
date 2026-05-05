@@ -1,0 +1,17 @@
+def divideData():
+    try:
+        num= int(input("Enter a number to divide 100 by : "))
+        reesult = 100 / num
+    except ValueError :
+        print("Error : please enter a valid integer")
+    except ZeroDivisionError:
+        print("Error : you cannot divided by zero")
+    except Exception as e :
+        print(f"An enexcepted error occured : {e}")
+    else:
+        print(f"Success : The Result is : {result}")
+    finally:
+        print("Execution completed!!")
+
+
+divideData()

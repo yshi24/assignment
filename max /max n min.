@@ -1,0 +1,11 @@
+dt = []
+n = int(input("Enter the total value :"))
+
+for i in range(n+1):
+    num = int(input("Enter the number :"))
+
+    dt.append(num)
+print(f"Data in list : {dt}")
+print(f"maximum in list : {max(dt)}")
+print(f"minimum in list : {min(dt)}")
+print(f"sum of data in list : {sum(dt)}")

@@ -1,0 +1,299 @@
+1) What are the types of Applications?
+Answer:-
+Desktop Application
+web Application
+Mobile Application
+System Software app Application
+Database Management system
+
+2) What is programing? 
+Answer:-
+Programming is set of instructions used to perform some task
+
+3) What is Python?
+Answer:-
+python is High-level programming Language which supports : 
+functional programming
+General purpose programming
+Object Oriented programming
+Structured programming
+Procedural programming
+
+4) Write a Python program to check if a number is positive, negative or zero. 
+Answer:-
+n = int(input("Enter the number : "))
+
+if(n>0):
+    print("Number is +ve")
+elif(n<0):
+    print("Number is -ve")
+else:
+    print("Number is Zero")
+
+Output:- Enter the number : -3			Output:- Enter the number : 3			
+	 Number is : -ve				 Number is : +ve
+	 
+
+5)Write a Python program to get the Factorial number of given numbers.
+Answer:-
+from math import factorial
+factorial(5)
+
+Output:-120
+
+6)Write a Python program to get the Fibonacci series of given range.
+Answer:-
+n1 = 0
+n2 = 1
+n3 = 0
+
+print(n1,end = " ")
+print(n2,end = " ")
+
+while(n3<55):
+    n3 = n1 + n2
+    print(n3,end =" ")
+    n1 = n2
+    n2 = n3
+
+Output:- 0 1 1 2 3 5 8 13 21 34 55
+
+7)How memory is managed in Python?
+Answer:-
+Python manages memory automatically through a private heap containing all object and data structures. The system relies on several layers and mechanisms to ensure efficient allocation and cleanup
+
+8)What is the purpose continuing statement in python? 
+Answer:-							Answer2:-
+
+for i in range(1,20):						for i in range(1,20):
+	if(i == 10):							if(i == 3 or i == 10 or i == 19):
+		continue							continue
+	print(i, end=" ")						print(i, end=" ")
+						
+
+Output:-1 2 3 4 5 6 7 8 9 11 12 13 14 15 16 17 18 19  		Output2:-1 2 4 5 6 7 8 9 11 12 13 14 15 16 17 18 
+
+9)Write python program that swap two number with temp variable and without temp variable. 
+Answer1:-with temp variable
+
+a = int(input("Enter the Value of A : " ))
+b = int(input("Enter the Value of B : " ))
+
+temp = 0
+
+print(f" The Value Before Swapping is : A = {a} and B = {b}")
+temp = b
+b = a 
+a = temp
+
+print(f" The Value After Swapping is : A = {a} and B = {b}")
+
+Output:-Enter the Value of A : 10
+	Enter the Value of B : 20
+	The Value Before Swapping is : A = 10 and B = 20
+	The Value After Swapping : A = 20 and B = 10
+
+Answer2:-without temp variable
+
+a = int(input("Enter the Value of A : "))
+b = int(input("Enter the Value of B : "))
+
+print(f" The Value Before Swapping is : A = {a} and B = {b}")
+
+(a , b)= (b , a)
+
+print(f" The Value After Swapping is : A = {a} and B = {b}")
+
+Output:-Enter the Value of A : 10
+	Enter the Value of B : 20
+	The Value Before Swapping is : A = 10 and B = 20
+	The Value After Swapping : A = 20 and B = 10
+
+10) Write a Python program to find whether a given number is even or odd, print out an appropriate message to the user.
+Answer:-
+
+num = int(input("Enter the Number : "))
+
+if(num % 2 == 0):
+	print("The number is Even")
+else:
+	print("The number is Odd")
+Output:-Enter the Number : 2		Enter the Number : 1
+	The number is Even		The number is Odd
+
+11) Write a Python program to test whether a passed letter is a vowel
+or not.
+Answer:-
+char = input("Enter the Character : ")
+char = char.lower()
+
+if(char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u'):
+	print("It's a Vowel")
+else:
+	print("its a Consonant")
+
+Output:-Enter the Character : A
+	It's a Vowel
+
+12) Write a Python program to sum of three given integers. However, if two values are equal sum will be zero.
+Answer:-
+n1 = int(input("Enter the first number : "))
+n2 = int(input("Enter the second number : "))
+n3 = int(input("Enter the third number : "))
+
+if(n1 == n2 or n2 == n1 or n3 == n1):
+    print("Zero")
+else:
+    print(n1+n2+n3)
+
+Output:-Enter the first number :  15
+	Enter the second number :  26
+	Enter the third number :  36
+	77
+
+13) Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5. 
+Answer:-
+n1 = int(input("Enter the first number : "))
+n2 = int(input("Enter the second number : "))
+
+if(n1 == n2):
+    print(True)
+elif(n1+n2 == 5):
+    print(True)
+elif(n1-n2 == 5):
+    print(True)
+else:
+    print(False)
+
+Output:-Enter the first number :  45		Output2:-Enter the first number :  2
+	Enter the second number :  46			 Enter the second number :  3
+	False						 True
+
+14)Write a python program to sum of the first n positive integers.
+Answer:-
+n = int(input("Enter the value of n : "))
+add = 0
+for i in range(n+1):
+    add = add + i
+print(f" Addition of n numbers are : {add} ")
+
+Output:-Enter the value of n :  10
+	Addition of n numbers are : 55	
+
+15)Write a Python program to calculate the length of a string.
+Answer:-
+name = "Welcome to python"
+len(name)
+
+Output:-17
+
+16) Write a Python program to count the number of characters (character frequency) in a string 
+Answer:-
+
+17)What are negative indexes and why are they used? 
+Answer:-
+Negative indexes in programming, most commonly used in Python, are a way to access elements in a sequence (such as lists, tuples, or strings) by counting backward from the end rather than the beginning. While normal indexing starts at \(0\) for the first element, negative indexing starts at-1 for the last element.
+
+18)Write a Python program to count occurrences of a substring in a string.
+Answer:-
+string = "The quick brown fox fox fox jumps over the lazy dog"
+substring = "fox"
+
+result = string.count(substring)
+
+print(result)
+
+Output:- 3
+
+19) Write a Python program to count the occurrences of each word in a given sentence.
+	
+
+20) Write a Python program to get a single string from two given strings, separated by a space and swap the first two characters of each string. 
+Answer:-
+
+str1 = input("Enter 1st Str :  ")
+str2 = input("Enter 2nd Str :  ")
+
+new_1 = str2 [ : 2] + str1[2 : ]
+new_2 = str1 [ : 2] + str2[2 : ]
+
+print(f"Swap string is : {new_1} and {new_2}")
+
+Output:-Enter 1st Str :   Zenil
+	Enter 2nd Str :   Bhatia
+	Swap string is : Bhnil and Zeatia
+24)Write a Python function to insert a string in the middle of a string.
+Answer:-
+name = "Welcome to Python"
+length = len(name)
+
+mid = length // 2
+
+name [:mid] + "Machine Learning With " + name[mid : ]
+
+Output:-'Welcome Machine Learning With to Python'
+
+25)What is List? How will you reverse a list?
+Answer:-
+A List is a collection data type in Python that:
+Stores multiple values in a single variable
+Is ordered (keeps sequence)
+Is mutable (can be changed)
+Allows duplicate values
+list = [10,20,30,40,50]
+list.reverse()
+print(list)
+
+26)How will you remove last object from a list?
+Answer:-list = [10,20,50,40,5]
+	list.pop()
+	print(list)
+27)Suppose list1 is [2, 33, 222, 14, and 25], what is list1 [-1]?
+Answer:- 25
+
+28)Differentiate between append () and extend () methods? 
+Answer:-
+append(): Adds the whole list as one element, creating a nested structure.
+list = [1, 2]
+list.append([3, 4])
+print(list)
+Output:- Result: [1, 2, [3, 4]]
+extend(): Unpacks the list and adds the numbers separately.
+list = [1, 2]
+list.extend([3, 4])
+print(list)
+Output:-[1, 2, 3, 4]
+
+29)Write a Python function to get the largest number, smallest num and sum of all from a list.
+Answer:-
+data = []
+n = int(input("Enter the Value of n : "))
+for i in range(n):
+    num = int(input("Enter the numbers : "))
+    data.append(num)
+print(f" List is : {data}")
+print(f" Sorted List : {sorted(data)}")
+print(f" Maximum number is : {max(data)}")
+print(f" Minimum number is : {min(data)}")
+print(f" Sum of number is : {sum(data)}")
+
+Output:-Enter the Value of n :  5
+	Enter the numbers :  26
+	Enter the numbers :  54
+	Enter the numbers :  56
+	Enter the numbers :  10
+	Enter the numbers :  30
+	List is : [26, 54, 56, 10, 30]
+	Sorted List : [10, 26, 30, 54, 56]
+	Maximum number is : 56
+	Minimum number is : 10
+	Sum of number is : 176
+
+30)How will you compare two lists?
+Answer:-
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(a == b)
+
+Output:- True

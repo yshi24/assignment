@@ -1,0 +1,11 @@
+def calculateCylinderArea(r, h) :
+    volume = pi * pow(radius, 2) * h
+    csa = 2 * pi * r * h
+    tsa = 2 * pi * r * h + 2* pi * pow(radius, 2)
+
+    print (f"volume of cylinder is : {volume}")
+    print (f"curved surface area is : {csa}")
+    print (f"total surface area is : {tsa}")
+radius = float(input("Enter radius of cylinder:"))
+height = float(input("Enter height of cylinder:"))
+calculateCylinderArea(radius, height)
